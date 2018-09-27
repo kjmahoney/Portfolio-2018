@@ -15,5 +15,4 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.render('base', {}));
 
-
 app.listen(port, () => console.log(`Listening on port ${port}`));
