@@ -6,7 +6,7 @@ gulp.task('default', ['watch', 'serve']);
 
 gulp.task('sass', () => {
   return gulp.src('public/scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sass({errLogToConsole: true}))
     .pipe(gulp.dest('public/css'))
     .pipe(browserSync.reload({
       stream: true

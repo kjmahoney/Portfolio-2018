@@ -1,0 +1,8 @@
+.l-container {
+  padding: 0 16px;
+
+  @include breakpoint(small) {
+    background-color: red;
+    padding: 0 24px;
+  }
+}

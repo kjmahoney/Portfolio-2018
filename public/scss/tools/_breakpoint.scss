@@ -1,0 +1,17 @@
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: 576px) { @content; }
+  }
+
+  @else if $breakpoint == medium {
+    @media (min-width: 784px) { @content; }
+  }
+
+  @else if $breakpoint == large {
+    @media (min-width: 976px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: small, medium, large";
+  }
+}

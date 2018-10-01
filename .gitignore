@@ -1,6 +1,6 @@
 node_modules
 
 #compiled
-public/css/*
+public/css
 debug.log
 debug.log

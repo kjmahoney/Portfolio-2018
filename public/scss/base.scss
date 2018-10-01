@@ -1,6 +1,12 @@
+@import 'tools/breakpoint';
+
 @import 'layout/container';
 
+@import 'components/about';
+@import 'components/footer';
 @import 'components/header';
+@import 'components/projects';
+
 
 html,body{
   margin: 0;
