@@ -1,3 +1,13 @@
 .c-header {
-  color: orange;
+  position: relative;
+}
+
+.c-header__name {
+  position: absolute;
+  top: 50%;
+}
+
+.c-header__canvas{
+  width: 100vw;
+  height: 213px;
 }
