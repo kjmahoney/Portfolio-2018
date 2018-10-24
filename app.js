@@ -19,7 +19,7 @@ const getProjects = async () => {
 //TODO: Extrapolate out as a 'controller'
 const loadPage = async function (req, res) {
   const projects = await getProjects();
-  res.render('base', { projects: projects})
+  res.render('base', { projects: projects.slice(0,3)})
 }
 
 app.engine('.html', ejs.__express);

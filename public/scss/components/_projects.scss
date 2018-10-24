@@ -1,0 +1,22 @@
+.c-projects__container {
+  display: block;
+
+  @include breakpoint(small) {
+    display: flex;
+  };
+}
+
+.c-project {
+  @include breakpoint(small) {
+    margin-right: $space-16;
+  };
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.c-projects__image {
+  height: 200px;
+  width: 100%;
+}

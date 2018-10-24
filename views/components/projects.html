@@ -1,11 +1,11 @@
 <section class="c-projects">
-  <h2>Projects</h2>
+  <h2>Latest Projects</h2>
 
   <div class="c-projects__container">
     <% for(var i=0; i < projects.length; i++) { %>
       <div class="c-project">
         <h3><%= projects[i].name %></h3>
-        <img src="<%= projects[i].image %>" alt="">
+        <img class="c-projects__image" src="<%= projects[i].image %>" alt="">
         <p><%= projects[i].description %></p>
         <p><a href="<%= projects[i].github_url %>">See code</a></p>
       </div>

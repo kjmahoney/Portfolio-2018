@@ -1,5 +1,7 @@
 .l-container {
   padding: 0 16px;
+  max-width: 960px;
+  margin: auto;
 
   @include breakpoint(small) {
     padding: 0 24px;
