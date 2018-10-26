@@ -1,0 +1,13 @@
+.c-about__links {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 $space-16;
+  max-width: 320px;
+}
+
+.c-about__logo {
+  height: 32px;
+  width: 32px;
+}
