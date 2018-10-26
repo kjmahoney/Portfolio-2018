@@ -3,8 +3,13 @@
 }
 
 .c-header__name {
+  font-size: 24px;
   position: absolute;
   top: 50%;
+
+  @include breakpoint(small) {
+    font-size: 32px;
+  };
 }
 
 .c-header__canvas{
