@@ -10,10 +10,10 @@ p, h1, h2, h3, h4 {
   margin: 0; }
 
 .o-section-header {
-  margin-bottom: 16px; }
+  margin-bottom: 24px; }
 
 .o-section {
-  margin-bottom: 32px; }
+  margin-bottom: 48px; }
 
 .l-container {
   padding: 0 16px;
@@ -23,26 +23,35 @@ p, h1, h2, h3, h4 {
     .l-container {
       padding: 0 24px; } }
 
+.c-about::after {
+  background-color: black;
+  content: "";
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 100px; }
+
 .c-about__links {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   padding: 0 16px;
   max-width: 320px; }
 
 .c-about__bio {
-  margin-bottom: 32px; }
+  margin-bottom: 48px; }
 
 .c-about__logo {
   height: 32px;
   width: 32px; }
 
 .c-header {
+  border-bottom: 1px solid black;
   position: relative; }
 
 .c-header__name {
-  font-size: 24px;
+  font-size: 28px;
   position: absolute;
   top: 50%; }
   @media (min-width: 576px) {

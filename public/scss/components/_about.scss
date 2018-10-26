@@ -1,14 +1,25 @@
+.c-about {
+  &::after {
+    background-color: black;
+    content: "";
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 100px;
+  }
+}
+
 .c-about__links {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 auto $space-48;
   padding: 0 $space-16;
   max-width: 320px;
 }
 
 .c-about__bio {
-  margin-bottom: $space-32;
+  margin-bottom: $space-48;
 }
 
 .c-about__logo {

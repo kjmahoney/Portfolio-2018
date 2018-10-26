@@ -1,9 +1,10 @@
 .c-header {
+  border-bottom: 1px solid black;
   position: relative;
 }
 
 .c-header__name {
-  font-size: $text-24;
+  font-size: $text-28;
   position: absolute;
   top: 50%;
 
