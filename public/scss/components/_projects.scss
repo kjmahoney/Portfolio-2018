@@ -7,6 +7,9 @@
 }
 
 .c-project {
+  margin-bottom: $space-24;
+
+
   @include breakpoint(small) {
     margin-right: $space-16;
   };
