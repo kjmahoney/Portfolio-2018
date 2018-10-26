@@ -1,6 +1,10 @@
 .c-header {
   border-bottom: 1px solid black;
   position: relative;
+
+  @include breakpoint(small) {
+    margin-bottom: $space-64;
+  };
 }
 
 .c-header__name {
