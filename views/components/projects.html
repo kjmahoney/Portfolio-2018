@@ -3,10 +3,17 @@
   <div class="c-projects__container">
     <% for(var i=0; i < projects.length; i++) { %>
       <div class="c-project">
-        <img class="c-projects__image" src="<%= projects[i].image %>" alt="">
-        <h3><%= projects[i].name %></h3>
-        <p><%= projects[i].description %></p>
-        <p><a href="<%= projects[i].github_url %>">See code</a></p>
+        <a href="<%= projects[i].url %>">
+          <img class="c-projects__image" src="<%= projects[i].image %>" alt="">
+        </a>
+        <a href="<%= projects[i].url %>"><h3 class="c-project__name"><%= projects[i].name %></h3></a>
+        <p class="c-project__description"><%= projects[i].description %></p>
+        <a href="<%= projects[i].github_url %>">
+        <div class="c-projects__link-container">
+          <img class="c-projects__logo" src="images/github.png" alt="github logo">
+          <p class="c-projects__github">See code</p>
+        </div>
+      </a>
       </div>
     <% } %>
   </div>

@@ -3,16 +3,19 @@
 
   @include breakpoint(small) {
     display: flex;
-  };
+    justify-content: space-between;
+  }
 }
 
 .c-project {
+  flex-shrink: 0;
   margin-bottom: $space-24;
 
-
   @include breakpoint(small) {
+    margin-bottom: 0;
     margin-right: $space-16;
-  };
+    flex-basis: calc(33% - 16px);
+  }
 
   &:last-child {
     margin-right: 0;
@@ -22,4 +25,35 @@
 .c-projects__image {
   height: 200px;
   width: 100%;
+}
+
+.c-project__description {
+  font-size: $text-14;
+  margin-bottom: $space-4;
+}
+
+.c-project__name {
+  margin-bottom: $space-4;
+}
+
+.c-projects__link-container {
+  display: flex;
+
+  &:hover {
+    .c-projects__logo,
+    .c-projects__github {
+      opacity: 0.5;
+    }
+  }
+}
+
+.c-projects__logo {
+  height: 16px;
+  margin-right: $space-4;
+  width: 16px;
+}
+
+.c-projects__logo,
+.c-projects__github {
+  transition: 0.2 opacity;
 }
