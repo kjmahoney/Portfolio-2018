@@ -20,4 +20,8 @@
 .c-header__canvas{
   width: 100vw;
   height: 213px;
+
+  @include breakpoint(small) {
+    height: 281px;
+  };
 }
