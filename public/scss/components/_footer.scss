@@ -1,1 +1,9 @@
+.c-footer {
+  background-color: rgba(66, 104, 124, .6);
+  border-top: 1px solid black;
+  height: 75px;
 
+  @include breakpoint(small) {
+    height: 150px;
+  };
+}
