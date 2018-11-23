@@ -5,11 +5,11 @@ var circles = [],
 
     // SETTINGS
     opacity = 0.6,                                      // the opacity of the circles 0 to 1
-    colors = ['rgba(34, 49, 63,' + opacity + ')',       // an array of rgb colors for the circles
-              'rgba(189, 195, 199,' + opacity + ')',
-              'rgba(241, 196, 15,' + opacity + ')',
-              'rgba(231, 76, 60,' + opacity + ')',
-              'rgba(231, 76, 60,' + opacity + ')'
+    colors = ['rgba(66, 104, 124,' + opacity + ')',       // an array of rgb colors for the circles
+              'rgba(132, 165, 184,' + opacity + ')',
+              'rgba(179, 218, 241,' + opacity + ')',
+              'rgba(203, 203, 203,' + opacity + ')',
+              'rgba(112, 117, 113,' + opacity + ')',
              ],
     minSize = 1,                                        // the minimum size of the circles in px
     maxSize = 10,                                       // the maximum size of the circles in px
